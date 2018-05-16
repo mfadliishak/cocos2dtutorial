@@ -1,0 +1,155 @@
+# Mac
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.swp
+*~.nib
+
+#Java
+*.class
+
+# XCode
+*.moved-aside
+build/*
+*.xcworkspace
+*.mode1v3
+*.mode2v3
+*.pbxuser
+!default.xcworkspace
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+*.perspective*
+#profile
+xcuserdata
+.idea/*
+!project.pbxproj
+DerivedData
+*.lock
+*.out
+
+#Cocoa pods
+*.old
+Pods/*
+
+#cocos2d-x
+libs/
+bin/
+obj/
+assets/
+gen/
+out/
+.classpath
+.project
+.cproject
+cocos2d/build/build/
+cocos2d/cocos/platform/android/libcocos2dx/build/
+cocos2d/cocos/platform/android/libcocos2dx/libcocos2dx.iml
+cocos2d/cocos/platform/android/java/bin/
+cocos2d/cocos/platform/android/java/gen/
+cocos2d/cocos/scripting/lua-bindings/proj.ios_mac/build/
+cocos2d/cocos/platform/android/java/local.properties
+
+
+# backup files
+*.bak
+*.bak[0-9][0-9]
+*.orig
+*.orig[0-9][0-9]
+
+# source packages - anywhere
+*.tar.bz2
+*.tar.gz
+*.tar
+*.tgz
+*.gtgz
+*.7z
+*.dmg
+*.gz
+*.iso
+*.zip
+
+# Generated files in the Android project #
+proj.android/local.properties
+proj.android/build/
+proj.android/.gradle/*
+proj.android/.idea/*
+proj.android/*.iml
+proj.android/app/*.iml
+
+
+*.apk
+
+# keystore
+*.keystore
+
+# Ignore files built by bada
+.Simulator-Debug/
+.Target-Debug/
+.Target-Release/
+
+# proj.ios_mac
+cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/
+proj.ios_mac/build/
+proj.ios_mac/*.xcodeproj/project.xcworkspace
+proj.ios_mac/*.xcodeproj/xcuserdata/
+!*.pch
+
+# proj.win32
+proj.win32/*.sdf
+proj.win32/*.opensdf
+proj.win32/Debug.*/
+proj.win32/Release.*/
+
+# cocos studio
+*.udf
+
+# Windows shortcuts
+*.lnk
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+# Ignore files built by bada
+.Simulator-Debug/
+.Target-Debug/
+.Target-Release/
+
+# Ignore files built by blackberry
+Simulator/
+Device-Debug/
+Device-Release/
+proj.android/libs/armeabi/gdb.setup
+proj.android/libs/armeabi/gdbserver
+proj.ios/outfile
+proj.android/libs/armeabi-v7a/gdb.setup
+proj.android/libs/armeabi-v7a/gdbserver
+proj.android/libs/x86/gdb.setup
+proj.android/libs/x86/gdbserver
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
