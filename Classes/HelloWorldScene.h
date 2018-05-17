@@ -34,11 +34,19 @@ public:
 
     virtual bool init();
     
+    // implement the "static create()" method manually
+    CREATE_FUNC(HelloWorld);
+    
+private:
     // a selector callback
     void menuOpenMethod1(cocos2d::Ref* pSender);
     
-    // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
+    // a selector callback for open url method 2
+    void menuOpenMethod2(cocos2d::Ref* pSender);
+    
+    cocos2d::MenuItemImage* createMenuItem(const cocos2d::Vec2& position);
+    
+    cocos2d::Label* createLabel(const std::string& title, const cocos2d::Vec2& position);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
