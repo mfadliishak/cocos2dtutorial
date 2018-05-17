@@ -8,10 +8,17 @@
 #include "Method1OpenUrl.h"
 #include "Url.h"
 
+#if(CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#include "platform/android/jni/JniHelper.h"
+
+static const std::string helperClassName = "org/cocos2dx/cpp/AppActivity";
+#endif
+
 void Method1OpenUrl::open(const std::string& url)
 {
 #if(CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    // TODO: next tutorial on android part.
+
+    cocos2d::JniHelper::callStaticVoidMethod(helperClassName, "openUrl", url);
     
 #elif(CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     std::shared_ptr<Url> urlObj = std::make_shared<Url>();

@@ -24,10 +24,15 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.cpp;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import org.cocos2dx.lib.Cocos2dxActivity;
 
 public class AppActivity extends Cocos2dxActivity {
+
+    private static Activity _activity = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +47,26 @@ public class AppActivity extends Cocos2dxActivity {
             return;
         }
         // DO OTHER INITIALIZATION BELOW
-        
+
+        _activity = this;
+    }
+
+    /**
+     * JNI call from C++ to Open given URL.
+     *
+     * @param url String
+     */
+    public static void openUrl(final String url) {
+
+        _activity.runOnUiThread(new Runnable() {
+            public void run() {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                _activity.startActivity(intent);
+
+            }
+        });
+
     }
 
 }
