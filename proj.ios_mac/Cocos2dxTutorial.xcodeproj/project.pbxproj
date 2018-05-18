@@ -49,6 +49,7 @@
 		BAF3DD1020AC1E9B0078CFAB /* Method1OpenUrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DD0F20AC1E9B0078CFAB /* Method1OpenUrl.cpp */; };
 		BAF3DD1220AC1F9B0078CFAB /* Url.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DD1120AC1F9B0078CFAB /* Url.mm */; };
 		BAF3DD1B20AD615E0078CFAB /* Method2OpenUrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DD1A20AD615E0078CFAB /* Method2OpenUrl.mm */; };
+		BAF3DD2120AD705C0078CFAB /* UrlNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DD1F20AD705C0078CFAB /* UrlNative.mm */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -142,6 +143,8 @@
 		BAF3DD1320AC1FC60078CFAB /* Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Url.h; sourceTree = "<group>"; };
 		BAF3DD1920AD614A0078CFAB /* Method2OpenUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Method2OpenUrl.h; sourceTree = "<group>"; };
 		BAF3DD1A20AD615E0078CFAB /* Method2OpenUrl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Method2OpenUrl.mm; sourceTree = "<group>"; };
+		BAF3DD1F20AD705C0078CFAB /* UrlNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UrlNative.mm; sourceTree = "<group>"; };
+		BAF3DD2020AD705C0078CFAB /* UrlNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlNative.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -337,6 +340,8 @@
 			children = (
 				BAF3DD1A20AD615E0078CFAB /* Method2OpenUrl.mm */,
 				BAF3DD1920AD614A0078CFAB /* Method2OpenUrl.h */,
+				BAF3DD1F20AD705C0078CFAB /* UrlNative.mm */,
+				BAF3DD2020AD705C0078CFAB /* UrlNative.h */,
 			);
 			path = Method2;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF3DD1220AC1F9B0078CFAB /* Url.mm in Sources */,
+				BAF3DD2120AD705C0078CFAB /* UrlNative.mm in Sources */,
 				BAF3DD1020AC1E9B0078CFAB /* Method1OpenUrl.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
 				BAF3DD1B20AD615E0078CFAB /* Method2OpenUrl.mm in Sources */,

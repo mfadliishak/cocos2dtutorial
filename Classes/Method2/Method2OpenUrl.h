@@ -13,6 +13,13 @@
 class Method2OpenUrl {
 public:
     static void open(const std::string& url);
+    
+private:
+    static void openUrlFromMethod1(const std::string& url);
+    
+    static void openUrlNative(const std::string& url);
+    
+    static void openUrlDirectly(const std::string& url);
 };
 
 #endif /* Method2OpenUrl_h */
