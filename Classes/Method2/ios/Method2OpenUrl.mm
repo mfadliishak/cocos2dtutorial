@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "Method2OpenUrl.h"
-#include "../Method1/Url.h"
+#include "../Method2OpenUrl.h"
+#include "../../Method1/Url.h"
 #include "UrlNative.h"
 
 void Method2OpenUrl::open(const std::string& url)
